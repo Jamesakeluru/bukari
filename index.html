@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <style>* {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfDQ4_5o9wEj-fYENA6pOzRdEYTua-knQZrQ&s);
+      background-repeat:20;
+      background-size:300px;
+      background-position:center;
+      color:white;
+      font-family: Helvetica;
+      margin: 0;
+    }
+    
+    header {
+      width: 100%;
+      height: 100px;
+      background-color: blue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+    }
+    
+    
+    #logo {
+      width:300px; 
+      height:100px;
+      
+      
+    }
+    
+    h1 {
+      color: #f1be32;
+      font-size:21px;
+      text-align: center;
+      font-style:italic;
+      
+      
+    }
+    
+    nav {
+      width: 50%;
+      max-width: 300px;
+      height: 50px;
+    }
+    
+    nav > ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-inline-start: 0;
+      margin-block: 0;
+      height: 100%;
+    }
+    
+    nav > ul > li {
+      color: #dfdfe2;
+      margin: 0 0.2rem;
+      padding: 0.2rem;
+      display: block;
+    }
+    
+    nav > ul > li:hover {
+      background-color: cyan;
+      color: blue;
+      cursor: pointer;
+    }
+    
+    li > a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    main {
+      padding-top: 150px;
+    }
+    
+    section {
+      width: 80%;
+      margin: 0 auto 10px auto;
+      max-width: 1200px;
+      font-size: 20px;
+      padding:20px;
+    }
+    
+    h1,
+    h2 {
+      font-family: Verdana, Tahoma;
+    }
+    
+    h2 {
+      border-bottom: 4px solid #dfdfe2;
+      margin-top: 0px;
+      padding-top: 60px;
+    }
+    
+    button {
+      display: block;
+      margin: 40px auto;
+      width: 40%;
+      padding: 15px;
+      font-size: 1.438rem;
+      background: #d0d0d5;
+      border: 3px solid #3b3b4f;
+    }
+    
+    footer {
+      background-color: #2a2a40;
+      display: flex;
+      justify-content: center;
+    }
+    
+    footer,
+    footer a {
+      color: #dfdfe2;
+    }
+    
+    address {
+      text-align: center;
+      padding: 0.3em;
+    }
+    
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+    
+    .bukari{width: 150px;
+    height: 150px;
+    }
+    </style>
+  </head>
+  <body >
+    <header>
+      <img id="logo" alt="freeCodeCamp" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/11/eye-glasses-adjusting-1296x728-header.jpg?w=1155&h=1528">
+      <h1>BUKARI'S EYE SOLUTIONS</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#address">ADDRESS</a></li>
+         
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="https://formspree.io/f/xdkodeva">
+        <section 
+        class="student-info" role="region" aria-labelledby="student-info">
+          <h2 id="student-info" >About The Author <img class="bukari" src="https://media.licdn.com/dms/image/v2/D4E22AQHdX4GU6hsEIg/feedshare-shrink_1280/feedshare-shrink_1280/0/1724348654354?e=1735171200&v=beta&t=q340pJbiVnIoRsV1oKPUBKhhz_slBWPXHAZF4mKvciI"></h2>
+          <p><div>His student Optometrist😊😊😊</div class="doc"><br>
+"The Eyes: Windows to the World.
+Have you ever stopped to think about the importance of your eyes? They're just as vital as your heart, liver, and kidneys! Without them, even the simplest tasks become a challenge. Imagine struggling to find your belongings in the dark or, worse, living with blindness due to neglect.
+The eyes are delicate and exposed to the environment, making them vulnerable to harmful pathogens and foreign bodies. Did you know that the eye is a self-contained, functional unit? This means that an issue in one part can affect the entire eye!
+Vision is the eye's primary function, and it's essential for daily life. Have you ever wondered how the blind navigate their world? Some may not have been born with blindness, but rather, it was caused by ignorance about eye care.
+Stay tuned for updates on eye diseases, their signs and symptoms, and most importantly, tips on how to protect your precious eyesight! Let's prioritize our eye health and take care of our windows to the world!"</p>
+        </section>
+       
+
+        <button type="submit"class="san">Send</button>
+      </form>
+    </main>
+    <footer id="address">
+      <address>
+        <a href="https://www.linkedin.com/posts/waidu-bukari-90008b2b0_universitylife-campuslessons-stayfocused-activity-7264226191786586112-8lXU?utm_source=share&utm_medium=member_android">LinkedIn</a><br />
+        UCC cape coast<br />
+        cape coast<br />
+        +233 59 950 2854 <br />
+        Ghana
+      </address>
+    </footer>
+  </body>
+</html>
